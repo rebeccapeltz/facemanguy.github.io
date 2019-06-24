@@ -10,3 +10,29 @@ a{
     text-decoration: none;
     color: purple;
 }
+
+.topnavbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.topnavbar a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.promogrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    border: 2px solid #333;
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
