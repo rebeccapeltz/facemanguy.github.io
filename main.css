@@ -4,35 +4,32 @@
 
 body{
     background-color: goldenrod;
-}
-
-a{
-    text-decoration: none;
-    color: purple;
-}
-
-.topnavbar {
-    background-color: #333;
-    overflow: hidden;
-}
-
-.topnavbar a{
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-}
-
-.promogrid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
-    border: 2px solid #333;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        'navbar navbar navbar navbar navbar'
+        'hero hero hero hero hero'
+        'skills skills skills about about'
+        'projects projects projects projects projects';
 }
 
-.maingrid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+nav{
+    grid-area: navbar;
+    background-color: aqua;
+}
+
+.heroBanner{
+    grid-area: hero;
+    background-color: blueviolet;
+}
+
+.skillsSection{
+    grid-area: skills;
+    background-color: chartreuse;
+}
+
+.aboutSection{
+    grid-area: about;
+    background-color: deeppink;
 }
