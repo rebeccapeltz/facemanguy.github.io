@@ -8,19 +8,20 @@ body{
 
 #contentGrid{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3rem 50vh 26vh 30vh 24vh;
     grid-template-areas: 
-        'navbar navbar navbar navbar navbar'
-        'hero hero hero hero hero'
-        'mepic about about about about'
-        'skills skills skills skills skills'
-        'projects projects projects projects projects';
+        'navbar navbar navbar'
+        'hero hero hero'
+        'mepic about about'
+        'skills1 skills2 skills3'
+        'projects projects projects';
 }
 
 nav{
     grid-area: navbar;
     background-color: aqua;
+    padding: 1rem;
 }
 
 .heroBanner{
@@ -31,11 +32,23 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('./images/art-city-city-lights.jpg');
+    padding: 10rem;
+    font-size: 2rem;
 }
 
-.skillsSection{
-    grid-area: skills;
+.skillsSection1{
+    grid-area: skills1;
     background-color: chartreuse;
+}
+
+.skillsSection2{
+    grid-area: skills2;
+    background-color: orange;
+}
+
+.skillsSection3{
+    grid-area: skills3;
+    background-color: navy;
 }
 
 .aboutSection{
@@ -47,6 +60,13 @@ nav{
     background-color: gold;
 }
 
+.mePic img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15%;
+}
+
 .promoSection{
     grid-area: projects;
     background-color: maroon;
@@ -55,8 +75,10 @@ nav{
 .promoGrid{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
     grid-gap: 1rem;
     border: solid beige 2px;
+    padding: 2rem;
 }
 
 .project1{
