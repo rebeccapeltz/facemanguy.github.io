@@ -9,7 +9,7 @@
     grid-template-areas: 
         'navbar navbar navbar navbar navbar'
         'hero hero hero hero hero'
-        'skills skills skills about about'
+        'skills skills about about about'
         'projects projects projects projects projects';
 }
 
