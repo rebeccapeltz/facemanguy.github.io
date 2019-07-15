@@ -2,14 +2,19 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+}
+
 #contentGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3rem 40vh 30vh 30vh;
+    grid-template-rows: 3rem 50vh 26vh 30vh 24vh;
     grid-template-areas: 
         'navbar navbar navbar navbar navbar'
         'hero hero hero hero hero'
-        'skills skills about about about'
+        'mepic about about about about'
+        'skills skills skills skills skills'
         'projects projects projects projects projects';
 }
 
@@ -36,4 +41,36 @@ nav{
 .aboutSection{
     grid-area: about;
     background-color: deeppink;
+}
+
+.mePic{
+    background-color: gold;
+}
+
+.promoSection{
+    grid-area: projects;
+    background-color: maroon;
+}
+
+.promoGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    border: solid beige 2px;
+}
+
+.project1{
+    background-color: aquamarine;
+}
+
+.project2{
+    background-color: violet;
+}
+
+.project3{
+    background-color: red;
+}
+
+.project4{
+    background-color: yellowgreen;
 }
