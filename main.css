@@ -2,11 +2,10 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: goldenrod;
+#contentGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 3rem 40vh 30vh 30vh;
     grid-template-areas: 
         'navbar navbar navbar navbar navbar'
         'hero hero hero hero hero'
@@ -21,7 +20,12 @@ nav{
 
 .heroBanner{
     grid-area: hero;
-    background-color: blueviolet;
+    color: whitesmoke;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./images/art-city-city-lights.jpg');
 }
 
 .skillsSection{
