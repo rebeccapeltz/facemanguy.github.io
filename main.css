@@ -9,7 +9,7 @@ body{
 #contentGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3rem 50vh 26vh 30vh 24vh;
+    grid-template-rows: 3rem 40vh 26vh 30vh auto;
     grid-template-areas: 
         'navbar navbar navbar'
         'hero hero hero'
@@ -32,7 +32,7 @@ nav{
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('./images/art-city-city-lights.jpg');
-    padding: 10rem;
+    padding: 5%;
     font-size: 2rem;
 }
 
@@ -64,7 +64,7 @@ nav{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 15%;
+    padding: 5%;
 }
 
 .promoSection{
