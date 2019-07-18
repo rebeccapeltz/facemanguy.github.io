@@ -4,12 +4,13 @@
 
 body{
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #contentGrid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 3rem 40vh 26vh 30vh auto;
+    grid-template-rows: 3rem 40vh auto auto auto;
     grid-template-areas: 
         'navbar navbar navbar'
         'hero hero hero'
@@ -39,21 +40,25 @@ nav{
 .skillsSection1{
     grid-area: skills1;
     background-color: chartreuse;
+    padding: 1rem 2rem 1rem 3rem;
 }
 
 .skillsSection2{
     grid-area: skills2;
     background-color: orange;
+    padding: 1rem 2rem 1rem 3rem;
 }
 
 .skillsSection3{
     grid-area: skills3;
-    background-color: navy;
+    background-color: cornflowerblue;
+    padding: 1rem 2rem 1rem 3rem;
 }
 
 .aboutSection{
     grid-area: about;
     background-color: deeppink;
+    padding: 1rem 2rem 1rem 3rem;
 }
 
 .mePic{
@@ -100,4 +105,16 @@ nav{
 ul{
     list-style: none;
     display: block;
+}
+
+.aboutSection li{
+    border: inset black 2px;
+    margin: 0.4rem;
+    padding: 0.4rem;
+    background-color: forestgreen;
+    display: inline-block;
+}
+
+.aboutSection h3{
+    padding-left: 3rem;
 }
