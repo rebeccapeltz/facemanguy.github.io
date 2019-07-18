@@ -96,3 +96,8 @@ nav{
 .project4{
     background-color: yellowgreen;
 }
+
+ul{
+    list-style: none;
+    display: block;
+}
