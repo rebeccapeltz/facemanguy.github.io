@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>JohnMeyerPortfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <!-- contibuton credit <a href="https://iconscout.com/icon/google-analytics-2" target="_blank">Google-analytics Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
+    <!-- contribution credit <a href="https://iconscout.com/icon/google-analytics-2" target="_blank">Google-analytics Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
     <a href="https://iconscout.com/icon/apache-8" target="_blank">Apache Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
     <a href="https://iconscout.com/icon/webpack-3" target="_blank">Webpack Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia" target="_blank">Icon Mafia</a>
     <a href="https://iconscout.com/icon/vue" target="_blank">Vue Logo Icon</a> by <a href="https://iconscout.com/contributors/icon-mafia">Icon Mafia</a> on <a href="https://iconscout.com">Iconscout</a>
     -->
 </head>
+
 <body>
-    <div id="contentGrid">
-        <nav class="topnavbar">
-                <a>Home</a>
-                <a>About</a>
-                <a>Portfolio</a>
-        </nav>
+    <!-- <div id="contentGrid"> -->
+    <nav class="topnavbar">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <div class="heroBanner">
-            <h1>John Meyer</h1>
-            <h2>Web Developer</h2>
-        </div>
+    <div class="heroBanner">
+        <h1>John Meyer</h1>
+        <h2>Web Developer</h2>
+    </div>
 
-        <div class="mePic">
-            <img src="./images/mePic.jpg">
-        </div>
+    <figure class="me-pic">
+        <img src="./images/mePic.jpg">
+    </figure>
 
-        <section class="skillsSection1">
-            <h3>Fundementals</h3>
+
+    <div id="about" class="about-section">
+        <h3>About Me</h3>
+        <ul>
+            <li>Ambitious Junior developer with a background in IT support. Graduate from Seattle university’s web
+                development certificate program.</li>
+            <li>Solid foundation in modern development practices including user experience design, version control,
+                server scripting, and JavaScript frameworks.</li>
+            <li>Able to teach and communicate details to a group with concise clarity and drive.</li>
+            <li> Seeking an entry level position in the software development field to flourish in. </li>
+        </ul>
+    </div>
+    <div id="skills" class="skills">
+        <section class="">
+            <h3>Fundamentals</h3>
             <ul>
                 <li><img src="./images/icons8-html-5-48.png"> Html5</li>
                 <li><img src="./images/icons8-css3-48.png"> CSS3</li>
@@ -39,7 +56,7 @@
             </ul>
         </section>
 
-        <section class="skillsSection2">
+        <section class="">
             <h3>Frameworks & Technologies</h3>
             <ul>
                 <li><img src="./images/Vue.png"> Vue.js</li>
@@ -49,7 +66,7 @@
             </ul>
         </section>
 
-        <section class="skillsSection3">
+        <section class="">
             <h3>Server & Backend</h3>
             <ul>
                 <li><img src="./images/icons8-ubuntu-48.png"> Ubuntu</li>
@@ -58,51 +75,82 @@
                 <li><img src="./images/Webpack.png"> Webpack</li>
             </ul>
         </section>
+    </div>
+    <hr>
 
-        <div class="aboutSection">
-            <h3>About Me</h3>
-            <ul>
-                <li>Ambitious Junior developer with a background in IT support. Graduate from Seattle university’s web development certificate program.</li>
-                <li>Solid foundation in modern development practices including user experience design, version control, server scripting, and JavaScript frameworks.</li>
-                <li>Able to teach and communicate details to a group with concise clarity and drive.</li>
-                <li> Seeking an entry level position in the software development field to flourish in. </li>
-            </ul>
+
+    <section id="projects" class="promo-section">
+        <div class="project">
+            <h3>WATS Capstone</h3>
+            <div>
+                <a href="#">Capstone</a>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300">
+            </div>
+            <div>
+                <a href="https://github.com/facemanguy/wats4000-mtg-final">Github</a>
+                <a href="">Deployed</a>
+            </div>
+            <hr>
         </div>
 
-        <section class="promoSection">
-            <div class="promoGrid">
-                <div class="project1">
-                    <h3>WATS Capstone</h3>
-                    <a href="#">Capstone</a>
-                    <img src="https://via.placeholder.com/300">
-                </div>
-                <div class="project2">
-                    <h3>MTG Vue API Card Finder</h3>
-                    <a href="https://www.johnmeyerwebdev.com/wats4000-mtg-final/#/">Magic the Gathering Card finder & booster simulator</a>
-                    <img src="https://via.placeholder.com/300">
-                    <a href="https://github.com/facemanguy/wats4000-mtg-final">Github</a>
-                </div>
-                <div class="project3">
-                    <h3>User Science Journal</h3>
-                    <a href="https://www.johnmeyerwebdev.com/user-sci-blog/AltHome?utm_expid=193394405-0.4FaNTidmQVmB6RciieXB6A.1&utm_referrer=https%3A%2F%2Fgithub.com%2Ffacemanguy%2Fuser-sci-blog">User Science Journal</a>
-                    <img src="https://via.placeholder.com/300">
-                    <a href="https://github.com/facemanguy/user-sci-blog">Github</a>
-                </div>
-                <div class="project4">
-                    <h3>Bootstrap 4 Design</h3>
-                    <a href="http://www.johnmeyerwebdev.com/wats3010-intro-to-bootstrap-4/">Lyman's Lounge</a>
-                    <img src="https://via.placeholder.com/300">
-                    <a href="https://github.com/facemanguy/wats3010-intro-to-bootstrap-4">Github</a>
-                </div>
+        <div class="project">
+            <h3>MTG Vue API Card Finder</h3>
+            <div>
+                <a href="https://www.johnmeyerwebdev.com/wats4000-mtg-final/#/">Magic the Gathering Card finder &
+                    booster simulator</a>
             </div>
-        </section>
+            <div>
+                <img src="https://via.placeholder.com/300">
+            </div>
+            <div>
+                <a href="https://github.com/facemanguy/wats4000-mtg-final">Github</a>
+                <a href="">Deployed</a>
+            </div>
+            <hr>
+        </div>
 
-        <footer>
-            <h3>Contact</h3>
-            <a href="https://www.linkedin.com/in/john-d-meyer/">LinedIn</a>
-            <a href="https://github.com/facemanguy">Github</a>
-        </footer>
+        <div class="project">
+            <h3>User Science Journal</h3>
+            <div>
+                <a
+                    href="https://www.johnmeyerwebdev.com/user-sci-blog/AltHome?utm_expid=193394405-0.4FaNTidmQVmB6RciieXB6A.1&utm_referrer=https%3A%2F%2Fgithub.com%2Ffacemanguy%2Fuser-sci-blog">User
+                    Science Journal</a>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300">
+            </div>
+            <div>
+                <a href="https://github.com/facemanguy/user-sci-blog">Github</a>
+                <a href="">Deployed</a>
+            </div>
+            <hr>
+        </div>
 
-    </div>
+        <div class="project">
+            <h3>Bootstrap 4 Design</h3>
+            <div>
+                <a href="http://www.johnmeyerwebdev.com/wats3010-intro-to-bootstrap-4/">Lyman's Lounge</a>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300">
+            </div>
+            <div>
+                <a href="https://github.com/facemanguy/wats3010-intro-to-bootstrap-4">Github</a>
+                <a href="">Deployed</a>
+            </div>
+            <hr>
+        </div>
+
+    </section>
+
+    <footer id="contact">
+        <h3>Contact</h3>
+        <a href="https://www.linkedin.com/in/john-d-meyer/">LinedIn</a>
+        <a href="https://github.com/facemanguy">Github</a>
+    </footer>
+
 </body>
+
 </html>
